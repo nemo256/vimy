@@ -34,6 +34,6 @@ require('telescope').setup{
 
 vim.keymap.set('n', '<C-f>', builtin.find_files, {})
 vim.keymap.set('n', '<C-g>', builtin.git_files, {})
-vim.keymap.set('n', '<C-G>', function()
+vim.keymap.set('n', '<C-S-G>', function()
 	builtin.grep_string({ search = vim.fn.input("Grep -> ") });
 end)
