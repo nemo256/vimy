@@ -1,9 +1,7 @@
 local home = os.getenv('HOME')
 local db = require('dashboard')
 
---
 -- Dashboard config
---
 db.hide_statusline = true
 db.hide_tabline = true
 db.hide_winbar = true
