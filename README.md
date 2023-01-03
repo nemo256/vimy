@@ -3,29 +3,37 @@ This is my personal neovim setup.
 
 ![Demo](demo.png)
 
-<!-- <!-- TABLE OF CONTENTS --> -->
-<!-- ## Table of Contents -->
-<!---->
-<!-- * [Project Structure](#project-structure) -->
-<!-- * [Install](#install) -->
-<!-- * [Usage](#usage) -->
-<!-- * [Develop](#develop) -->
-<!-- * [License](#license) -->
-<!---->
-<!-- ## Project Structure -->
-<!-- ``` -->
-<!-- matrix_game/ -->
-<!-- |-- src/ -->
-<!-- |   |-- matrix_game.c -->
-<!-- | -->
-<!-- |-- AUTHORS -->
-<!-- |-- demo.png -->
-<!-- |-- LICENSE -->
-<!-- |-- Makefile -->
-<!-- |-- matrix_game -->
-<!-- |-- README.md -->
-<!-- ``` -->
-<!---->
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [Project Structure](#project-structure)
+* [Install](#install)
+* [License](#license)
+
+## Project Structure
+```
+vimy/
+|-- lua/
+|-- lua/
+|   |-- vimy/
+|       |-- colorscheme.lua
+|       |-- dashboard.lua
+|       |-- init.lua
+|       |-- lualine.lua
+|       |-- packer.lua
+|       |-- remap.lua
+|       |-- set.lua
+|       |-- telescope.lua
+|       |-- treesitter.lua
+|       |-- undotree.lua
+|
+|-- AUTHORS
+|-- demo.png
+|-- init.lua
+|-- LICENSE
+|-- README.md
+```
+
 <!-- ## Install -->
 <!-- - Install from github:  -->
 <!-- ``` -->
