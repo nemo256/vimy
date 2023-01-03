@@ -14,7 +14,6 @@ This is my personal neovim setup.
 ```
 vimy/
 |-- lua/
-|-- lua/
 |   |-- vimy/
 |       |-- colorscheme.lua
 |       |-- dashboard.lua
