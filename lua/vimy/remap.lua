@@ -8,7 +8,6 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 
 -- Dashboard
-vim.keymap.set("n", "<C-H>", ":Telescope oldfiles<CR>")
 vim.keymap.set("n", "<C-w>", ":edit ~/Work<CR>", { silent = true })
 
 -- Easier moving
