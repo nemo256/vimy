@@ -7,6 +7,10 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Netrw tree
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 
+-- Dashboard
+vim.keymap.set("n", "<C-H>", ":Telescope oldfiles<CR>")
+vim.keymap.set("n", "<C-w>", ":edit ~/Work<CR>", { silent = true })
+
 -- Easier moving
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
@@ -15,9 +19,6 @@ vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-n>", ":tabnew<CR>", { silent = true })
 vim.keymap.set("n", "J", ":tabprev<CR>", { silent = true })
 vim.keymap.set("n", "K", ":tabnext<CR>", { silent = true })
-
--- Folder navigation
-vim.keymap.set("n", "<C-w>", ":edit ~/Work<CR>", { silent = true })
 
 -- Text navigation
 vim.keymap.set("v", "J", "<nop>")
