@@ -1,5 +1,6 @@
 vim.opt.nu = true
 vim.opt.ignorecase = true
+vim.opt.lazyredraw = true
 vim.opt.showcmd = false
 vim.opt.rnu = true
 vim.opt.mouse = ""
