@@ -1,4 +1,3 @@
-local home = os.getenv('HOME')
 local db = require('dashboard')
 
 -- Dashboard config
