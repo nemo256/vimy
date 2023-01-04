@@ -47,7 +47,7 @@ vimy/
 ```
 
 ## Install 🔨
-> Install from github: 
+> Install vimy:
 ```shell
 git clone https://github.com/nemo256/vimy \
   ~/.config/nvim
