@@ -58,5 +58,5 @@ git clone https://github.com/nemo256/vimy \
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-## License
+## License 📑
 - Please read [vimy/LICENSE](https://github.com/nemo256/vimy/blob/master/LICENSE)
