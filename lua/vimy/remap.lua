@@ -4,9 +4,6 @@ vim.g.mapleader = " "
 -- Worst mode to be in
 vim.keymap.set("n", "Q", "<nop>")
 
--- Remove <Enter> keymap
-vim.keymap.set("n", "<CR>", "<nop>")
-
 -- Netrw tree
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 
