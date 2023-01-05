@@ -2,9 +2,9 @@
 
 # `Vimy`
 
-<h2>
+<h3>
   My personal neovim setup.
-</h2>
+</h3>
 
 <!-- Badges -->
 ![GitHub Repo stars](https://img.shields.io/github/stars/nemo256/vimy?style=for-the-badge)
