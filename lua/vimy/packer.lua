@@ -28,11 +28,17 @@ return require('packer').startup(function(use)
 	-- 	}
 	-- }
 
+  -- Devicons
+  use 'kyazdani42/nvim-web-devicons'
+
+  -- Plenary
+  use 'nvim-lua/plenary.nvim'
+
 	-- Telescope
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+	use 'nvim-telescope/telescope.nvim'
+
+	-- Nvim-tree
+  use 'nvim-tree/nvim-tree.lua'
 
 	-- Treesitter
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -41,10 +47,7 @@ return require('packer').startup(function(use)
 	use 'folke/tokyonight.nvim'
 
   -- Lualine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use 'nvim-lualine/lualine.nvim'
 
 	-- Undotree
 	use 'mbbill/undotree'
@@ -52,15 +55,13 @@ return require('packer').startup(function(use)
   -- Autopairs
   use {
     "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
+    config = function() require("nvim-autopairs").setup() end
   }
 
   -- Comment
   use {
     'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
+    config = function() require('Comment').setup() end
   }
 
 end)
