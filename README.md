@@ -20,7 +20,7 @@
 ## Table of Contents
 
 * [Project Structure 📁](#project-structure)
-* [Install 🔨](#install)
+* [Setup 🔨](#setup)
 * [License 📑](#license)
 
 ## Project Structure 📁
@@ -46,17 +46,23 @@ vimy/
   └── README.md
 ```
 
-## Install 🔨
-> Install vimy:
+## Setup 🔨
+> Setup vimy:
 ```shell
 git clone https://github.com/nemo256/vimy \
   ~/.config/nvim
 ```
 
-> Install packer: 
+> Setup packer: 
 ```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
+
+> Install all the plugins:
+```shell
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+```
+
 ## License 📑
 - Please read [vimy/LICENSE](https://github.com/nemo256/vimy/blob/master/LICENSE)
