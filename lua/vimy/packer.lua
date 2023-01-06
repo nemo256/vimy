@@ -5,6 +5,16 @@ return require('packer').startup(function(use)
   -- Dashboard
   use 'glepnir/dashboard-nvim'
 
+  -- Autocompletion
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+
+  -- Snippets
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
+
   -- Devicons
   use 'kyazdani42/nvim-web-devicons'
 

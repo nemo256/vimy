@@ -33,3 +33,6 @@ vim.opt.signcolumn = "no"
 vim.opt.iskeyword:append("-")
 vim.opt.iskeyword:append("_")
 vim.opt.isfname:append("@-@")
+
+-- Snippets (cmp)
+vim.opt.completeopt = "menu,menuone,noselect"
