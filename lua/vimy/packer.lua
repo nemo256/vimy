@@ -42,6 +42,12 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup() end
   }
 
+  -- Gitsigns
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function() require('gitsigns').setup() end
+  }
+
   -- Comment
   use {
     'numToStr/Comment.nvim',
