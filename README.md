@@ -28,6 +28,7 @@
 vimy/
   ├── lua/
   │   └── vimy/
+  │       ├── autocompletion.lua
   │       ├── colorscheme.lua
   │       ├── dashboard.lua
   │       ├── init.lua
