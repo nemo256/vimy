@@ -10,6 +10,12 @@ vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 -- Dashboard
 vim.keymap.set("n", "<C-w>", ":edit ~/Work<CR>", { silent = true })
 
+-- Disable arrow keys
+vim.keymap.set("n", "<up>", "<nop>")
+vim.keymap.set("n", "<down>", "<nop>")
+vim.keymap.set("n", "<left>", "<nop>")
+vim.keymap.set("n", "<right>", "<nop>")
+
 -- Easier moving
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
