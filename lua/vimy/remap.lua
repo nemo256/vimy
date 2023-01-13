@@ -37,8 +37,8 @@ vim.keymap.set("n", "gj", "j")
 vim.keymap.set("n", "gk", "k")
 
 -- Manage sessions
-vim.keymap.set("n", "<C-S-s>", ":SessionSave<CR>")
-vim.keymap.set("n", "<C-S-d>", ":SessionDelete<CR>")
+vim.keymap.set("n", "<C-S-s>", ":mksession! /root/.config/nvim/session/_root_.vim<CR>")
+vim.keymap.set("n", "<C-S-d>", ":!rm /root/.config/nvim/session/_root_.vim<CR>")
 vim.keymap.set("n", "<C-l>", ":SessionLoad<CR>")
 
 -- Yank to system clipboard
