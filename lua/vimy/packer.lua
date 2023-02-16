@@ -3,10 +3,10 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
   -- Dashboard
-  use {
-    'glepnir/dashboard-nvim',
-    event = 'VimEnter',
-  }
+  -- use {
+  --   'glepnir/dashboard-nvim',
+  --   event = 'VimEnter',
+  -- }
   -- Autocompletion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
