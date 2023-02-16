@@ -41,7 +41,7 @@ require('dashboard').setup({
         action = 'e ~/Work',
       },
     },
-    footer = {'󱓟 Neovim FTW 󱓟'}
+    footer = {'󱓟  Neovim FTW  󱓟'}
   },
   hide = {
     statusline = true,
