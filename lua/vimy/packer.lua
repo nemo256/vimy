@@ -1,12 +1,12 @@
 return require('packer').startup(function(use)
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
 
   -- Dashboard
-  -- use {
-  --   'glepnir/dashboard-nvim',
-  --   event = 'VimEnter',
-  -- }
+  use {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+  }
   -- Autocompletion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
@@ -23,20 +23,20 @@ return require('packer').startup(function(use)
   -- Plenary
   use 'nvim-lua/plenary.nvim'
 
-	-- Telescope
-	use 'nvim-telescope/telescope.nvim'
+  -- Telescope
+  use 'nvim-telescope/telescope.nvim'
 
-	-- Treesitter
-	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  -- Treesitter
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-	-- Colorscheme
-	use 'folke/tokyonight.nvim'
+  -- Colorscheme
+  use 'folke/tokyonight.nvim'
 
   -- Lualine
   use 'nvim-lualine/lualine.nvim'
 
-	-- Undotree
-	use 'mbbill/undotree'
+  -- Undotree
+  use 'mbbill/undotree'
 
   -- Autopairs
   use {

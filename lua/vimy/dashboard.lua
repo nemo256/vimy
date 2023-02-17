@@ -1,4 +1,4 @@
-require('dashboard').setup({
+require('dashboard').setup{
   theme = 'doom',
   config = {
     header = {
@@ -48,4 +48,4 @@ require('dashboard').setup({
     tabline = true,
     winbar = true,
   },
-})
+}
