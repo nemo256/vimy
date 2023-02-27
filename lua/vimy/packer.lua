@@ -1,3 +1,16 @@
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer()
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -6,6 +19,60 @@ return require('packer').startup(function(use)
   use {
     'glepnir/dashboard-nvim',
     event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        theme = 'doom',
+        config = {
+          header = {
+          '                                   ',
+          '          ▀████▀▄▄              ▄█ ',
+          '            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ',
+          '    ▄        █          ▀▀▀▀▄  ▄▀  ',
+          '   ▄▀ ▀▄      ▀▄              ▀▄▀  ',
+          '  ▄▀    █     █▀   ▄█▀▄      ▄█    ',
+          '  ▀▄     ▀▄  █     ▀██▀     ██▄█   ',
+          '   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ',
+          '    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ',
+          '   █   █  █      ▄▄           ▄▀   ',
+          '                                   ',
+          '                                   ',
+          },
+          center = {
+            {
+              icon = '  ',
+              desc = 'Recently opened files                   ',
+              key = 'CTRL + H',
+              action =  'Telescope oldfiles',
+            },
+            {
+              icon = '  ',
+              desc = 'Find File                               ',
+              key = 'CTRL + F',
+              action = 'Telescope find_files find_command=rg,--files',
+            },
+            {
+              icon = '  ',
+              desc = 'Load Session                            ',
+              key = 'CTRL + L',
+              action =  'SessionLoad',
+            },
+            {
+              icon = '  ',
+              desc = 'Open Projects                           ',
+              key = 'CTRL + W',
+              action = 'e ~/Work',
+            },
+          },
+          footer = {'󱓟  Neovim FTW  󱓟'}
+        },
+        hide = {
+          statusline = true,
+          tabline = true,
+          winbar = true,
+        },
+      }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
   }
   -- Autocompletion
   use 'hrsh7th/nvim-cmp'
