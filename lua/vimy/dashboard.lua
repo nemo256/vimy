@@ -38,7 +38,7 @@ require('dashboard').setup{
         icon = '  ',
         desc = 'Open Projects                           ',
         key = 'CTRL + W',
-        action = 'e ~/Work',
+        action = 'e ~/work',
       },
     },
     footer = {'󱓟  Neovim FTW  󱓟'}
