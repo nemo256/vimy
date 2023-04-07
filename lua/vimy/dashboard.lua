@@ -18,7 +18,7 @@ require('dashboard').setup{
     center = {
       {
         icon = '  ',
-        desc = 'Recently opened files                   ',
+        desc = 'Search history                          ',
         key = 'CTRL + H',
         action =  'Telescope oldfiles',
       },
