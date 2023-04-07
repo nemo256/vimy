@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
           center = {
             {
               icon = '  ',
-              desc = 'Recently opened files                   ',
+              desc = 'Search History                          ',
               key = 'CTRL + H',
               action =  'Telescope oldfiles',
             },
@@ -60,7 +60,7 @@ return require('packer').startup(function(use)
               icon = '  ',
               desc = 'Open Projects                           ',
               key = 'CTRL + W',
-              action = 'e ~/Work',
+              action = 'e ~/work',
             },
           },
           footer = {'󱓟  Neovim FTW  󱓟'}
