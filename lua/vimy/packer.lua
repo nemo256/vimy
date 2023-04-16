@@ -40,25 +40,25 @@ return require('packer').startup(function(use)
           center = {
             {
               icon = '  ',
-              desc = 'Search History                          ',
+              desc = 'History                      ',
               key = 'CTRL + H',
               action =  'Telescope oldfiles',
             },
             {
               icon = '  ',
-              desc = 'Find File                               ',
+              desc = 'Files                        ',
               key = 'CTRL + F',
               action = 'Telescope find_files find_command=rg,--files',
             },
             {
               icon = '  ',
-              desc = 'Load Session                            ',
+              desc = 'Load                         ',
               key = 'CTRL + L',
               action =  'SessionLoad',
             },
             {
               icon = '  ',
-              desc = 'Open Projects                           ',
+              desc = 'Work                         ',
               key = 'CTRL + W',
               action = 'e ~/work',
             },

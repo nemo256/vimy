@@ -101,7 +101,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\n\0\0\6\0\17\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\3=\3\14\0025\3\15\0=\3\16\2B\0\2\1K\0\1\0\thide\1\0\3\15statusline\2\vwinbar\2\ftabline\2\vconfig\vfooter\1\2\0\0\27󱓟  Neovim FTW  󱓟\vcenter\1\0\4\bkey\rCTRL + W\vaction\ve ~/ok\ticon\n  \tdesc-Open Projects                           \1\0\4\bkey\rCTRL + L\vaction\16SessionLoad\ticon\n  \tdesc-Load Session                            \1\0\4\bkey\rCTRL + F\vaction1Telescope find_files find_command=rg,--files\ticon\n  \tdesc-Find File                               \1\0\4\bkey\rCTRL + H\vaction\23Telescope oldfiles\ticon\n  \tdesc-Search History                          \vheader\1\0\0\1\r\0\0(                                   <          ▀████▀▄▄              ▄█ D            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ :    ▄        █          ▀▀▀▀▄  ▄▀  :   ▄▀ ▀▄      ▀▄              ▀▄▀  >  ▄▀    █     █▀   ▄█▀▄      ▄█    B  ▀▄     ▀▄  █     ▀██▀     ██▄█   D   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  D    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  6   █   █  █      ▄▄           ▄▀   (                                   (                                   \1\0\1\ntheme\tdoom\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\t\0\0\6\0\17\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\3=\3\14\0025\3\15\0=\3\16\2B\0\2\1K\0\1\0\thide\1\0\3\vwinbar\2\ftabline\2\15statusline\2\vconfig\vfooter\1\2\0\0\27󱓟  Neovim FTW  󱓟\vcenter\1\0\4\vaction\re ~/work\ticon\n  \bkey\rCTRL + W\tdesc\"Work                         \1\0\4\vaction\16SessionLoad\ticon\n  \bkey\rCTRL + L\tdesc\"Load                         \1\0\4\vaction1Telescope find_files find_command=rg,--files\ticon\n  \bkey\rCTRL + F\tdesc\"Files                        \1\0\4\vaction\23Telescope oldfiles\ticon\n  \bkey\rCTRL + H\tdesc\"History                      \vheader\1\0\0\1\r\0\0(                                   <          ▀████▀▄▄              ▄█ D            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ :    ▄        █          ▀▀▀▀▄  ▄▀  :   ▄▀ ▀▄      ▀▄              ▀▄▀  >  ▄▀    █     █▀   ▄█▀▄      ▄█    B  ▀▄     ▀▄  █     ▀██▀     ██▄█   D   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  D    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  6   █   █  █      ▄▄           ▄▀   (                                   (                                   \1\0\1\ntheme\tdoom\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -173,6 +173,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
@@ -181,10 +185,6 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

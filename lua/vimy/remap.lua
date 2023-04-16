@@ -8,7 +8,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-b>", vim.cmd.Ex)
 
 -- Dashboard
-vim.keymap.set("n", "<C-w>", ":edit ~/Work<CR>", { silent = true })
+vim.keymap.set("n", "<C-w>", ":edit ~/work<CR>", { silent = true })
 
 -- Disable arrow keys
 vim.keymap.set("n", "<up>", "<nop>")
