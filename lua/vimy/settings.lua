@@ -21,7 +21,7 @@ o.wrap = true
 
 o.swapfile = false
 o.backup = false
-o.undodir = os.getenv("HOME").."/.vim/undodir"
+o.undodir = os.getenv("HOME") .. "/.vim/undodir"
 o.undofile = true
 
 o.hlsearch = false
@@ -45,4 +45,3 @@ g.undotree_WindowLayout = 2
 g.undotree_ShortIndicators = 0
 g.undotree_SplitWidth = 10
 g.undotree_DiffpanelHeight = 5
-

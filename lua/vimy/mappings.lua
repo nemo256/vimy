@@ -7,7 +7,35 @@ vim.g.mapleader = " "
 k.set("n", "Q", "<nop>")
 
 -- Netrw tree
-k.set("n", "<C-b>", vim.cmd.Ex)
+-- k.set("n", "<C-b>", vim.cmd.Ex)
+
+-- Neotree
+k.set("n", "<C-b>", ":Neotree toggle<CR>", { silent = true })
+
+-- DadbodUI
+-- Function to close all windows and launch DBUI
+local function open_dbui()
+	-- Set custom mappings for Dadbod UI after it's opened
+	-- Close the dashboard buffer if it's visible
+	if vim.bo.filetype == "dashboard" then
+		vim.cmd("bd") -- Close the dashboard buffer
+	end
+	-- Open DBUI
+	vim.cmd("DBUIToggle")
+	-- Move to the other window (assumed empty)
+	vim.cmd("wincmd l") -- Switch to the next window
+	-- Close the current window if it's not DBUI
+	if vim.bo.filetype ~= "dbui" then
+		vim.cmd("close") -- Close the extra window
+	end
+end
+k.set("n", "<C-g>", open_dbui, { silent = true })
+
+-- Panes (splits) setup
+k.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
+k.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
+k.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
+k.set("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
 -- Dashboard
 k.set("n", "<C-w>", ":edit ~/work<CR>", { silent = true })
@@ -19,8 +47,8 @@ k.set("n", "<left>", "<nop>")
 k.set("n", "<right>", "<nop>")
 
 -- Easier moving
-k.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
-k.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+-- k.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+-- k.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
 -- Tab navigation
 k.set("n", "<C-n>", ":tabnew<CR>", { silent = true })
@@ -41,10 +69,10 @@ k.set("n", "gk", "k")
 -- Manage sessions
 k.set("n", "<C-S-s>", ":mksession! ~/.config/nvim/session/_root_.vim<CR>")
 k.set("n", "<C-S-d>", ":!rm ~/.config/nvim/session/_root_.vim<CR>")
-k.set("n", "<C-l>", ":source ~/.config/nvim/session/_root_.vim<CR>")
+k.set("n", "<C-S-l>", ":source ~/.config/nvim/session/_root_.vim<CR>")
 
 -- Yank to system clipboard
-k.set("v", "<C-c>", "\"+y")
+k.set("v", "<C-c>", '"+y')
 
 -- Substitute a word
 k.set("n", "<C-s>", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
