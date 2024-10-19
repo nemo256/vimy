@@ -32,10 +32,10 @@ end
 k.set("n", "<C-g>", open_dbui, { silent = true })
 
 -- Panes (splits) setup
-k.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
+k.set("n", "<C-h>", "<C-w>W", { noremap = true, silent = true })
 k.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 k.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
-k.set("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
+k.set("n", "<C-l>", "<C-w>w", { noremap = true, silent = true })
 
 -- Dashboard
 k.set("n", "<C-w>", ":edit ~/work<CR>", { silent = true })

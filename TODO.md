@@ -1,3 +1,4 @@
-- [ ] Switch to lazy.nvim.
+- [x] Switch to lazy.nvim.
 - [ ] Add alpha.nvim plugin instead of dashboard.
 - [ ] Customize the installer steps.
+- [ ] Custom pane setup.
