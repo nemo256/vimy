@@ -38,7 +38,7 @@ k.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 k.set("n", "<C-l>", "<C-w>w", { noremap = true, silent = true })
 
 -- Dashboard
-k.set("n", "<C-w>", ":edit ~/work<CR>", { silent = true })
+k.set("n", "<C-S-w>", ":edit ~/work<CR>", { silent = true })
 
 -- Disable arrow keys
 k.set("n", "<up>", "<nop>")
