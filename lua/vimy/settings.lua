@@ -46,4 +46,4 @@ g.undotree_ShortIndicators = 0
 g.undotree_SplitWidth = 10
 g.undotree_DiffpanelHeight = 5
 
-g.plantuml_previewer#plantuml_jar_path="~/plantuml.jar"
+-- g.plantuml_previewer#plantuml_jar_path="~/plantuml.jar"
